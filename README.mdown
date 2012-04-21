@@ -4,9 +4,9 @@ GoogleCalendar Spark ReadMe
 Intent
 ------
 
-This spark is a supplement to the Google API Client (and [Google API Client spark](http://getsparks.org/packages/GoogleAPIClient/versions/HEAD/show)) intended to make integrating Google Calendar support within your CodeIgniter application or website easier.
+This spark is a supplement to the Google Client API (and [Google Client API spark](http://getsparks.org/packages/GoogleAPIClient/versions/HEAD/show)) intended to make integrating Google Calendar support within your CodeIgniter application or website easier.
 
-The Google API Client is already pretty well designed and relatively easy to incorporate, so at first glance this spark might seem redundant, but it provides a number of features which compliment the Google API quite well, including:
+The Google Client API is already pretty well designed and relatively easy to incorporate, so at first glance this spark might seem redundant, but it provides a number of features which compliment the Google API quite well, including:
 
 - A local configurable cache to limit the number of requests your application is making, so that each page load does not initiate a connection to Google's servers
 - Support for fetching public/shared calendars via Curl (e.g. for listing public upcoming events on your site)
