@@ -18,8 +18,8 @@ class gcal {
 		$this->CI =& get_instance();
 		
 		// load API Client
-		require_once SPARKPATH . "GoogleAPIClient/3.0.0/src/apiClient.php";
-		require_once SPARKPATH . "GoogleAPIClient/3.0.0/src/contrib/apiCalendarService.php";
+		require_once SPARKPATH . "GoogleAPIClient/0.5.0/src/apiClient.php";
+		require_once SPARKPATH . "GoogleAPIClient/0.5.0/src/contrib/apiCalendarService.php";
 		
 		// register client
 		$this->apiClient = new apiClient();

@@ -52,6 +52,11 @@ Event Variables Supported
 Change Log
 ==========
 
+1.0.2
+-----
+
+- Correct dumb and careless mistake where Spark was fetching older version of Google API Client Spark
+
 1.0.1
 -----
 
