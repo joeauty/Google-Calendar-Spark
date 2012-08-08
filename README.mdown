@@ -52,6 +52,11 @@ Event Variables Supported
 Change Log
 ==========
 
+1.0.3
+-----
+
+- Inserts and updates now send description field to Google
+
 1.0.2
 -----
 

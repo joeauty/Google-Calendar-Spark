@@ -211,7 +211,7 @@ class gcal {
 					try {
 						$this->CI->curl->create('https://www.googleapis.com/calendar/v3/calendars/' . $configObj['calendarId'] . '/events?pp=1&key=' . $this->CI->config->item('api_key'));
 						$this->CI->curl->get();
-						$calEvents = json_decode($this->CI->curl->execute());	
+						$calEvents = json_decode($this->CI->curl->execute());
 					}
 					catch (Exception $e) {
 						print $e->getMessage();
@@ -248,7 +248,7 @@ class gcal {
 				try {
 					$this->CI->curl->create('https://www.googleapis.com/calendar/v3/calendars/' . $configObj['calendarId'] . '/events?pp=1&key=' . $this->CI->config->item('api_key'));
 					$this->CI->curl->get();
-					$calEvents = json_decode($this->CI->curl->execute());	
+					$calEvents = json_decode($this->CI->curl->execute());
 				}
 				catch (Exception $e) {
 					print $e->getMessage();
@@ -389,6 +389,7 @@ class gcal {
 		$postBody->id = $configObj['eventId'];
 		$postBody->location = $configObj['location'];
 		$postBody->summary = $configObj['summary'];
+		$postBody->description = $configObj['description'];
 		$postBody->sequence = $sequence;
 		$postBody->recurrence = $configObj['recurrence'];
 		date_default_timezone_set("GMT");
@@ -463,6 +464,7 @@ class gcal {
 		
 		$postBody->location = $configObj['location'];
 		$postBody->summary = $configObj['summary'];
+		$postBody->description = $configObj['description'];		
 		$postBody->recurrence = $configObj['recurrence'];
 		
 		try {
